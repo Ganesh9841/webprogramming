@@ -1,0 +1,112 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #e50914;
+}
+
+#signinBtn {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#signinBtn:hover {
+    background-color: #f40612;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+                url("https://via.placeholder.com/1200x600") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+#heroText {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Join Form */
+#joinForm {
+    display: flex;
+    gap: 10px;
+}
+
+#email {
+    padding: 12px;
+    width: 250px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+#joinForm button {
+    padding: 12px 20px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#joinForm button:hover {
+    background-color: #f40612;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background-color: #111;
+}
